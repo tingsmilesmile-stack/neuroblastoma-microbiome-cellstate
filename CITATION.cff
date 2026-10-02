@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+title: >-
+  Analysis code for "Host-Transcriptome Microbiome-Interaction Scores in
+  Neuroblastoma Are Largely Explained by Tumour Cell State: A TARGET Cohort Analysis"
+message: If you use this code, please cite the article above.
+type: software
+authors:
+  - family-names: Li
+    given-names: Ting
+  - family-names: Wu
+    given-names: Xiaojuan
+license: MIT
+repository-code: "https://github.com/tingsmilesmile-stack/neuroblastoma-microbiome-cellstate"
+keywords:
+  - neuroblastoma
+  - TARGET
+  - ssGSEA
+  - tumour cell state
+  - reproducibility
