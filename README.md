@@ -2,8 +2,8 @@
 
 Analysis code for:
 
-> **Host-Transcriptome Microbiome-Interaction Scores in Neuroblastoma Are Largely Explained by
-> Tumour Cell State: A TARGET Cohort Analysis**
+> **Host-Transcriptome Microbiome-Interaction Scores in Neuroblastoma Are Proxies for
+> Mesenchymal Differentiation State and Tissue Composition: A TARGET Cohort Analysis**
 
 All analyses use the publicly available **GDC TARGET-NBL** cohort. No primary data are redistributed here.
 
@@ -41,6 +41,7 @@ Run the scripts **from the repository root** (all internal paths are relative), 
 | 15 | `A38_signature_circularity.py` | circularity of the published-signature correlation |
 | 16 | `D4_branch_adjudication.py` | adjudication of the cell-state confounding |
 | 17 | `build_supplementary_v2.py` | assemble the supplementary tables |
+| 18 | `17_deg_continuous.R` | continuous-axis differential expression (DESeq2) |
 | 18 | `16_figures153.R` | generate all figures |
 
 ## Reproducibility notes

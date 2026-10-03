@@ -310,7 +310,7 @@ def main():
           f"{abs(r_pub):.3f}（正式签名）｜ attenuation = "
           f"{'n/a' if not estimable else f'{att:.1%}'} ｜ 偏 R² = {pr2:.4f}")
     print(f"  MI-high vs MI-low 的 MES 效应量  Cohen's d = {d:+.3f}")
-    print(f"\n  ★★判定：分支 {branch}")
+    print(f"\n  判定：分支 {branch}")
     print(f"      依据：{reason}")
 
     print("\n" + "=" * 88)

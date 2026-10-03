@@ -4,7 +4,7 @@
 # =============================================================================
 # Rationale: pathway scores are computed with the standard GSVA ssGSEA
 #   implementation (all parameters reported), not an in-house approximation.
-# 本脚本：用 GSVA 2.6.6 的 ssgseaParam() 标准实现重算，报告全部参数。
+# This script uses the GSVA ssgseaParam() standard implementation and reports all parameters.
 #
 # NOTE: the GSVA 2.x API differs from GSVA 1.x (verified experimentally):
 #     旧写法 gsva(expr, geneSets, method="ssgsea", ...) 已废除；

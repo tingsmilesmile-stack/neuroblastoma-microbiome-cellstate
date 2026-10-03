@@ -1,7 +1,8 @@
 cff-version: 1.2.0
 title: >-
   Analysis code for "Host-Transcriptome Microbiome-Interaction Scores in
-  Neuroblastoma Are Largely Explained by Tumour Cell State: A TARGET Cohort Analysis"
+  Neuroblastoma Are Proxies for Mesenchymal Differentiation State and Tissue
+  Composition: A TARGET Cohort Analysis"
 message: If you use this code, please cite the article above.
 type: software
 authors:

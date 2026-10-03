@@ -65,9 +65,9 @@ d["OS_years"] = pd.to_numeric(d["OS_time"], errors="coerce")/365.25
 d["male"] = (d["gender"]=="male").astype(int)
 d["MI_high"] = (grp=="MI_high").astype(int)
 d["age_years"] = pd.to_numeric(d["age_years"], errors="coerce")
-d["mycn_amp"] = pd.to_numeric(d["mycn_amp"], errors="coerce").fillna(0).astype(int)
-d["high_risk"] = (d["cog_risk"].astype(str).str.contains("High", case=False, na=False)).astype(int)
-d["stage4"] = d["inss_stage"].astype(str).str.contains("4", na=False).astype(int)
+d["mycn_amp"] = pd.to_numeric(d["mycn_amp"], errors="coerce")  # 保留 NaN；不要 fillna(0)（1 例缺失，须按缺失处理）
+d["high_risk"] = (pd.to_numeric(d["cog_risk"], errors="coerce") == 2).astype(int)
+d["stage4"] = (pd.to_numeric(d["inss_stage"], errors="coerce") == 4).astype(int)
 dv = d.dropna(subset=["OS_years","OS_event"]).copy()
 dv = dv[dv["OS_years"]>=0]
 print(f"\n③ 生存：n={len(dv)}｜死亡={int(dv['OS_event'].sum())}｜删失={int((1-dv['OS_event']).sum())}"
